@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        180deg,
+        #070B18 0%,
+        #0B1026 40%,
+        #151A3A 100%
+
+    );
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.glass-card{
+    width: 460px;
+    padding: 40px;
+    border-radius: 20px;
+    background: var(--glass);
+     border:1px solid var(glass-border);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0,0,0, .35);
+}
+
+.glass-card h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.glass-card p{
+    line-height:1.8;
+    text-align: center;
+    margin-bottom:  15px;
+}
+
+.glass-card button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    border:none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.welcome-sreen{
+    position: relative;
+}
+
+.stars{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.stars-1{
+    background-image:
+    radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 2px);
+
+    background-size:120px 120px;
+}
+
+.stars-2{
+    background-image:
+    radial-gradient(circle, rgba(255,255,255,.7) 1px, transparent 2px);
+
+    background-size:80px 80px;
+}
+
+.stars-3{
+    background-image:
+    radial-gradient(circle, white 1.5px, transparent 3px);
+
+    background-size:55px 55px;
+}
