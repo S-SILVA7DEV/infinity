@@ -1,13 +1,32 @@
+/*===========================
+        Infinity App
+==============================*/        
+
 console.log("Infinity iniciado!");
-const startButton = document.querySelector(".star-button");
-console.log(startButton);
 
-startButton.addEventListener("click", function (){
-    welcomeScreen.style.display = "none";
-    loadingScreen.style.display = "flex";
-});
-
+/*======================
+    Elementos
+=======================*/
+const startButton = document.querySelector(".start-button");
 const welcomeScreen = document.querySelector("#welcome-screen");
 const loadingScreen = document.querySelector("#loading-screen");
+
+/*===================
+    Eventos
+=====================*/
+startButton.addEventListener("click", startInfinity);
+
+/*=================
+    Funções
+==================*/
+function startInfinity(){
+     welcomeScreen.style.display = "none";
+     loadingScreen.style.display = "flex";
+     setTimeout(function(){
+        console.log("Hora de abrir o aplicarivo!");
+    
+     },2000);
+}
+
 
  
